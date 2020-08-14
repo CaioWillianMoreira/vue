@@ -64,9 +64,9 @@ __{{ variável }}__
 
 ## Sintáxe do template para se comunicar com a camada de dados
 
-### interpolação: __{{ variavel }}__
+### interpolação: ```{{ variavel }}```
 
-### diretivas: __<a v-bind:href="url">...</a>__
+### diretivas: ```<a v-bind:href="url">...</a>```
 
 - VueJs é reativo, é capaz de alterar toda a camada da aplicação
 
