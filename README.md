@@ -1,4 +1,5 @@
 ## Curso vueJs
+__link__: https://www.youtube.com/watch?v=cSa-SMVMGsE
 
 - Instancia um componente vue
 
@@ -115,4 +116,19 @@ methods: {
       })
     }
   }
+```
+
+- this.name && this.message refletem no módel, sendo possível assim fazer atualizações na interface.
+```
+methods: {
+  addComment() {
+    this.comments.push({
+      name: this.name,
+      message: this.message
+    })
+
+    this.name = '';
+    this.message = '';
+  }
+}
 ```

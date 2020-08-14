@@ -31,10 +31,16 @@ new Vue ({
   },
   methods: {
     addComment() {
+      if (this.name.trim() === '' || this.message.trim() === '') {
+        return
+      }
       this.comments.push({
         name: this.name,
         message: this.message
       })
+
+      this.name = ''
+      this.message = ''
     }
   }
 })
