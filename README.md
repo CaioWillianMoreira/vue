@@ -105,7 +105,7 @@ return {
 
 __diretivas:__ v-model="name" && v-model="message"
 
-__erança através do this:__ console.log(this.name)
+__herança através do this:__ console.log(this.name)
 
 ```
 methods: {
@@ -132,7 +132,7 @@ methods: {
   }
 }
 ```
-- Com parentes é possível adicionar um index __v-for="(comment, index)__
+- Com parenteses é possível adicionar um index __v-for="(comment, index)__
 
 - Método de remover um item list
 ```
