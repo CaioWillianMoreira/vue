@@ -61,14 +61,13 @@ __v-for="comment in comments"__
 
 __{{ variável }}__
 
-
-## Sintáxe do template para se comunicar com a camada de dados
+- Sintáxe do template para se comunicar com a camada de dados
 
 ### interpolação: ```{{ variavel }}```
 
 ### diretivas: ```<a v-bind:href="url">...</a>```
 
-- VueJs é reativo, é capaz de alterar toda a camada da aplicação
+- VueJs é reativo, por tanto é capaz de alterar toda a camada da aplicação através de um evento disparado
 
 
 
