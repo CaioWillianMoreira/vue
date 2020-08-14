@@ -25,3 +25,51 @@ new Vue ({
   template: `<html>Seu HTML</html>`
 })
 ```
+- A função data() vai retornar um objeto disponível dentro do template
+
+Escrita convencional
+```
+data: function () {
+    return {
+      comments: [
+        {
+          name: 'Caio',
+          message: 'Lorem Ipsum'
+        }
+      ]
+    }
+  }
+```
+- Escrita reduzida
+```
+data () {
+    return {
+      comments: [
+        {
+          name: 'Caio',
+          message: 'Lorem Ipsum'
+        }
+      ]
+    }
+  }
+```
+- Diretiva para iterar sobre o objeto
+
+__v-for="comment in comments"__
+
+- Passar variáveis como parâmetro
+
+__{{ variável }}__
+
+
+## Sintáxe do template para se comunicar com a camada de dados
+
+### interpolação: __{{ variavel }}__
+
+### diretivas: __<a v-bind:href="url">...</a>__
+
+- VueJs é reativo, é capaz de alterar toda a camada da aplicação
+
+
+
+
