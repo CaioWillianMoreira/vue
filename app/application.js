@@ -12,11 +12,11 @@ new Vue ({
         <button v-on:click="addComment" type="submit" class="btn btn-primary">Comentar</button>
       </div>
       <div class="list-group">
-        <div class="list-group-item" v-for="comment in comments">
+        <div class="list-group-item" v-for="(comment, index) in comments">
           <span class="comment__author">Autor: <strong>{{comment.name}}</strong></span>
           <p>{{comment.message}}</p>
           <div>
-            <a href="#" title="Excluir">Excluir</a>
+            <a href="#" title="Excluir" v-on:click="removeComments(index)">Excluir</a>
           </div>
         </div>
       </div>
@@ -41,6 +41,9 @@ new Vue ({
 
       this.name = ''
       this.message = ''
+    },
+    removeComments (index) {
+      this.comments.splice(index, 1)
     }
   }
 })

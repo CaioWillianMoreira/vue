@@ -132,3 +132,25 @@ methods: {
   }
 }
 ```
+- Com parentes é possível adicionar um index __v-for="(comment, index)__
+
+- Método de remover um item list
+```
+  methods: {
+    addComment() {
+      if (this.name.trim() === '' || this.message.trim() === '') {
+        return
+      }
+      this.comments.push({
+        name: this.name,
+        message: this.message
+      })
+
+      this.name = ''
+      this.message = ''
+    },
+    removeComments (index) {
+      this.comments.splice(index, 1)
+    }
+  }
+```
