@@ -17,7 +17,7 @@ new Vue ({
 ```
 template: `seu HTML`
 ```
-### ex :
+__ex__ :
 
 ```
 new Vue ({
@@ -55,17 +55,17 @@ data () {
 ```
 - Diretiva para iterar sobre o objeto
 
-__v-for="comment in comments"__
+```v-for="comment in comments"```
 
 - Passar variáveis como parâmetro
 
-__{{ variável }}__
+```{{ variável }```
 
 - Sintáxe do template para se comunicar com a camada de dados
 
-### interpolação: ```{{ variavel }}```
+__interpolação:__ ```{{ variavel }}```
 
-### diretivas: ```<a v-bind:href="url">...</a>```
+__diretivas:__ ```<a v-bind:href="url">...</a>```
 
 - VueJs é reativo, por tanto é capaz de alterar toda a camada da aplicação através de um evento disparado
 
@@ -75,11 +75,11 @@ v-on:click="addComment"
 ```
 
 - Crio todos os métodos disponibilizado no template através das diretivas
-
+```
 methods: {
   addComment() {
     console.log("Cliquei!")
   }
 }
-
+```
 
