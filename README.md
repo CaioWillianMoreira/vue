@@ -69,6 +69,17 @@ __{{ variável }}__
 
 - VueJs é reativo, por tanto é capaz de alterar toda a camada da aplicação através de um evento disparado
 
+- Diretiva evento click
+```
+v-on:click="addComment"
+```
 
+- Crio todos os métodos disponibilizado no template através das diretivas
+
+methods: {
+  addComment() {
+    console.log("Cliquei!")
+  }
+}
 
 
