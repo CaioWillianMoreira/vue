@@ -82,4 +82,37 @@ methods: {
   }
 }
 ```
+- VUE utiliza-se de __Two way data binding__ podemos alterar de 2 formas 2 caminhos.
 
+1) - pode alterar um valor através do input do usuário, altera um dado no model e ele reflete automaticamente pra você.
+
+2) - Se alterar a camada do módel ele também reflete pra você, "um caminho de mão dupla" portanto, se conecta automaticamente com o módel!
+
+- Passo objetos dentro do return para iteragir com o campo
+```
+return {
+  comments: [
+    {
+      name: 'Caio',
+      message: 'Lorem Ipsum
+    }
+  ],
+  name: '',
+  message: '',
+}
+```
+
+__diretivas:__ v-model="name" && v-model="message"
+
+__erança através do this:__ console.log(this.name)
+
+```
+methods: {
+    addComment() {
+      this.comments.push({
+        name: this.name,
+        message: this.message
+      })
+    }
+  }
+```
