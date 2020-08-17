@@ -12,7 +12,7 @@ new Vue ({
         <button v-on:click="addComment" type="submit" class="btn btn-primary">Comentar</button>
       </div>
       <div class="list-group">
-        <div class="list-group-item" v-for="(comment, index) in comments">
+        <div class="list-group-item" v-for="(comment, index) in allComments">
           <span class="comment__author">Autor: <strong>{{comment.name}}</strong></span>
           <p>{{comment.message}}</p>
           <div>
@@ -31,7 +31,7 @@ new Vue ({
   },
   methods: {
     addComment() {
-      if (this.name.trim() === '' || this.message.trim() === '') {
+      if (this.message.trim() === '') {
         return
       }
       this.comments.push({
@@ -44,6 +44,14 @@ new Vue ({
     },
     removeComments (index) {
       this.comments.splice(index, 1)
+    }
+  },
+  computed: {
+    allComments() {
+      return this.comments.map(comment => ({
+        ...comment,
+        name: comments.name.trim() === '' ? 'Anônimo' : comment.name
+      }))
     }
   }
 })
