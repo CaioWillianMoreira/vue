@@ -154,3 +154,6 @@ methods: {
     }
   }
 ```
+- Remoção do prevent default
+__v-on:click.prevent__
+

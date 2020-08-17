@@ -16,7 +16,7 @@ new Vue ({
           <span class="comment__author">Autor: <strong>{{comment.name}}</strong></span>
           <p>{{comment.message}}</p>
           <div>
-            <a href="#" title="Excluir" v-on:click="removeComments(index)">Excluir</a>
+            <a href="#" title="Excluir" v-on:click.prevent="removeComments(index)">Excluir</a>
           </div>
         </div>
       </div>
