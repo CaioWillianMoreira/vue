@@ -1,4 +1,4 @@
-## Curso vueJs
+## CURSO VUE
 __link__: https://www.youtube.com/watch?v=cSa-SMVMGsE
 
 - Instancia um componente vue
