@@ -50,7 +50,7 @@ new Vue ({
     allComments() {
       return this.comments.map(comment => ({
         ...comment,
-        name: comments.name.trim() === '' ? 'Anônimo' : comment.name
+        name: comment.name.trim() === '' ? 'Anônimo' : comment.name
       }))
     }
   }
