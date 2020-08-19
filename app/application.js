@@ -53,6 +53,11 @@ new Vue ({
         name: comment.name.trim() === '' ? 'Anônimo' : comment.name
       }))
     }
+  },
+  watch: {
+    comments(val) {
+      console.log('val', val)
+    }
   }
 })
 

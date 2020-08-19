@@ -158,6 +158,18 @@ methods: {
 __v-on:click.prevent__
 
 
-Disponibiliza variáveis e valores para serem renderizados no template, assim como a propriedade __data__ porém, o data está muito mais relacionado com a camada de models e o computed está mais relacionado com a interface.
+- Disponibiliza variáveis e valores para serem renderizados no template, assim como a propriedade __data__ porém, o data está muito mais relacionado com a camada de models e o computed está mais relacionado com a interface.
 
- computed: {}
+```
+computed: {
+
+}
+```
+
+- Consegue monitorar alteração em qualquer propriedade.
+
+```
+watch: {
+
+}
+```
