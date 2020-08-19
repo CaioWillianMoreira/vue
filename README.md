@@ -173,3 +173,25 @@ watch: {
 
 }
 ```
+
+### single file components vue
+
+- É possível criar arquivos do tipo VUE
+
+```
+npm install -g @vue/cli
+```
+
+- Entre dentro da pasta do projeto e execute o comando
+```
+vue ui
+```
+
+-> clique em criar novo projeto
+-> npm
+-> próximo
+-> pre devinição padrão
+-> criar projeto
+
+- acesse a pasta __vuejs-cli__ pelo terminal e execute o comando
+npm run server
