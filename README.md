@@ -195,3 +195,22 @@ vue ui
 
 - acesse a pasta __vuejs-cli__ pelo terminal e execute o comando
 __npm run server__
+
+- Emite um evento para ser escutado por outros componentes
+```
+this.$emit('add-todo',{
+  name: this.name,
+  message: this.message
+})
+```
+
+- Intercepta o evento disparado para o componente desejado
+```
+v-on:add-todo="suaFunçao"
+```
+
+- Identificador único, tem que ser colocado sempre que houver listas
+```
+v-bind:key=index
+```
+

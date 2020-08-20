@@ -12,7 +12,7 @@
 
 <script>
   export default {
-    data() {
+    data () {
       return {
         name: '',
         message: ''
@@ -23,6 +23,11 @@
         if (this.message.trim() === '') {
           return
         }
+
+        this.$emit('add-todo',{
+          name: this.name,
+          message: this.message
+        })
 
         this.name = ''
         this.message = ''
