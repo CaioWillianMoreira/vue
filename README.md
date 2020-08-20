@@ -194,4 +194,4 @@ vue ui
 -> criar projeto
 
 - acesse a pasta __vuejs-cli__ pelo terminal e execute o comando
-npm run server
+__npm run server__
