@@ -1,14 +1,6 @@
 <template>
   <div class="container">
-    <div class="form-todo form-group">
-      <h1>Comentários</h1>
-      <hr>
-      <input type="text" placeholder="nome" name="author" v-model="name" class="form-control">
-      <br>
-      <textarea placeholder="Comentário" name="message" v-model="message" class="form-control"></textarea>
-      <br>
-      <button v-on:click="addComment" type="submit" class="btn btn-primary">Comentar</button>
-    </div>
+    <FormTodo />
     <div class="list-group">
       <div class="list-group-item" v-bind:key=index v-for="(comment, index) in allComments">
         <span class="comment__author">Autor: <strong>{{comment.name}}</strong></span>
@@ -21,27 +13,17 @@
   </div>
 </template>
 <script>
+import FormTodo from './FormTodo'
 export default {
+  components: {
+    FormTodo
+  },
   data () {
     return {
-      comments: [],
-      name: '',
-      message: '',
+      comments: []
     }
   },
   methods: {
-    addComment() {
-      if (this.message.trim() === '') {
-        return
-      }
-      this.comments.push({
-        name: this.name,
-        message: this.message
-      })
-
-      this.name = ''
-      this.message = ''
-    },
     removeComments (index) {
       this.comments.splice(index, 1)
     }
