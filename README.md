@@ -212,5 +212,4 @@ v-on:add-todo="suaFunçao"
 ```
 v-bind:key=index
 ```
-__link__: https://www.youtube.com/watch?v=cSa-SMVMGsE
 
